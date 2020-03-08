@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="main text-center">
+        <h1>Password Generator</h1>
+        <hr>
+        <form action="{% url 'password' %}">
+            <select name="length" id="length">
+                <option value="6">6 chars</option>
+                <option value="7">7 chars</option>
+                <option value="8">8 chars</option>
+                <option value="9">9 chars</option>
+                <option value="10">10 chars</option>
+                <option value="11">11 chars</option>
+                <option value="12" selected="selected">12 chars</option>
+                <option value="13">13 chars</option>
+                <option value="14">14 chars</option>
+            </select>
+            length
+            <br> <br>
+
+            <input type="checkbox" name="uppercase" id="checkbox"> Uppercase
+            <br><br>
+
+            <input type="checkbox" name="numbers" id="checkbox"> Numbers
+            <br><br>
+
+            <input type="checkbox" name="specialchars" id="checkbox"> Special Characters
+            <br><br>
+
+            <input type="submit" value="Generate Password" class="btn btn-primary">
+        </form>
+    </div>
+    <br>
+    <div class="about_us text-center">
+        <a href="{%url 'aboutus' %}">About Password Generator</a>
+    </div>
+</body>
+</html>
