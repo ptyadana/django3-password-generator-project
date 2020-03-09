@@ -3,6 +3,9 @@ A simple Password Generator project using
 + Python
 + Django 3 framework
 + tiny bit of bootstrap
++ hosted on pythonanywhere.com
+
+[take me to Password Generator !](http://project1byptyadana.pythonanywhere.com/)
 
 ### home page
 ---
